@@ -1,0 +1,12 @@
+{
+  "todos": [
+    {
+      "id": "b06c5ae0-07ad-44d5-a3a6-3b058a8b5b07",
+      "duty": "Wynieść śmieci"
+    },
+    {
+      "id": "7ca3e3dd-c4ed-497f-818d-4cbdc88c947e",
+      "duty": "Zrobić zakupy"
+    }
+  ]
+}
