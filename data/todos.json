@@ -1,0 +1,16 @@
+{
+    "todos": [
+      {
+        "id": "1",
+        "duty": "Wynieść śmieci"
+      },
+      {
+        "id": "2",
+        "duty": "Pościelić łóżko"
+      },
+      {
+        "id": "3",
+        "duty": "Zrobić zakupy"
+      }
+    ]
+  }

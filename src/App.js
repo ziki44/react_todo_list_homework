@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+// import { getTodos } from './http'
 
 function App() {
+
+  const  [todos, setTodos] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3004/todos")
+    .then((response) => response.json())
+    .then((todos) => {
+      setTodos(todos)
+      console.log(todos)
+    })
+    .catch((e) => console.log(e.message))
+  }, []);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ul>
+        {todos.map(todo => (
+          <li key={todo.id}>{todo.duty}</li>
+        )) ?? null}
+      </ul>
     </div>
   );
 }
