@@ -10,7 +10,11 @@ const Li = ({deleteTodo, item}) => {
 const LiItem = styled.li`
     list-style: none;
     margin-top: 10px;
-    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+        color: #f2bbbb;
+        transition: color .3s;
+    }
 `
 
 export default Li;

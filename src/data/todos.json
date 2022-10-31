@@ -1,12 +1,16 @@
 {
   "todos": [
     {
-      "id": "b06c5ae0-07ad-44d5-a3a6-3b058a8b5b07",
+      "id": "284cbc01-191d-4da6-9e72-43e9ce120493",
       "duty": "Wynieść śmieci"
     },
     {
-      "id": "7ca3e3dd-c4ed-497f-818d-4cbdc88c947e",
-      "duty": "Zrobić zakupy"
+      "id": "d74314ac-8e68-4ebd-a016-78b89c585f9a",
+      "duty": "Wyjść z psem na spacer"
+    },
+    {
+      "id": "89dc1d87-a94c-4339-aba5-3179e93eedb9",
+      "duty": "Pojechać do miasta na spacer."
     }
   ]
 }

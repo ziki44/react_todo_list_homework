@@ -56,9 +56,12 @@ function App() {
 
   return (
     <Wrapper>
-      <Input inputValue={inputValue} handleInputChange={handleInputChange}/>
-      {!inputValue && !validate ? <P>Nie można dodać pustego zadania!!!</P> : null}
-      <button onClick={handleAddTodo}>Click</button>
+      <Header>
+        <Input inputValue={inputValue} handleInputChange={handleInputChange}/>
+        {!inputValue && !validate ? <P>Nie można dodać pustego zadania!!!</P> : null}
+        <Button onClick={handleAddTodo}>Dodaj</Button>
+      </Header>
+      <H1>Lista rzeczy do zrobienia: </H1>
       <Todos todos={todos} deleteTodo={deleteTodo}/>
     </Wrapper>
   );
@@ -68,15 +71,34 @@ const Wrapper = styled.div`
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
+`
+
+const Header = styled.div`
 `
 
 const P = styled.p`
   color: red;
   font-weight: 700;
+`
+
+const H1 = styled.h1`
+  margin: 20px;
+`
+
+const Button = styled.button`
+  width: 80px;
+  border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+    background-color: #a6a4a1;
+    transition: background-color .3s;
+  }
 `
 
 export default App;
